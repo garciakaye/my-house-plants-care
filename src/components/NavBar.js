@@ -26,17 +26,6 @@ function NavBar() {
       Home
     </NavLink>
     <NavLink
-      to="/about"
-      exact
-      style={linkStyles}
-      activeStyle={{
-        background: "black",
-        color: "white"
-      }} 
-    >
-      About
-    </NavLink>
-    <NavLink
       to="/new-plant"
       exact
       style={linkStyles}

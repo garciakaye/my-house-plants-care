@@ -11,85 +11,99 @@
           "id": 2,
           "botanicalName": "Hedera Helix",
           "commonName": "English Ivy",
+          "image": "http://mygardenforest.com/wp-content/uploads/2019/03/english-ivy.jpg",
           "waterSchedule": [2, 5]
       },
       {
           "id": 3,
           "botanicalName": "Rhipaslis Paradoxa",
           "commonName": "Chain Cactus",
-          "waterSchedule": [2, 5]
+          "image": "https://www.pulpkaktus.com/wp-content/uploads/2020/08/Rhipsalis_paradoxa_chain_cactus_tapered_cement_planter-2.jpg",
+          "waterSchedule": [3, 5]
       },
       {
           "id": 4,
           "botanicalName": "Scindapsus Pictus 'Argyraeus'",
           "commonName": "Satin Pothos",
-          "waterSchedule": [2, 5]
+          "image": "https://cdn.shopify.com/s/files/1/2601/2952/products/IMG_2554_1080x.jpg",
+          "waterSchedule": [3, 5]
       },
       {
           "id": 5,
           "botanicalName": "Philodendron Hederaceum",
           "commonName": "Velvet Leaf Philodendron",
-          "waterSchedule": [2, 5]
+          "image": "https://cdn.shopify.com/s/files/1/2528/3612/products/1-Philodendran-Velvet-4-DETAIL_1800x1800.jpg",
+          "waterSchedule": [3, 5]
       },
       {
           "id": 6,
-          "botanicalName": "Philodendron Scandens",
-          "commonName": "Sweetheart Plant",
-          "waterSchedule": [2, 5]
+          "botanicalName": "Philodendron Scandens Brasil",
+          "commonName": "Heartleaf Philodendron",
+          "image": "https://plantingman.com/wp-content/uploads/2018/12/Philodendron-scandens-Brasil-Indoor-House-Plant.jpg",
+          "waterSchedule": [4, 6]
       },
       {
           "id": 7,
           "botanicalName": "Dracaena",
           "commonName": "Dracaena",
-          "waterSchedule": [2, 5]
+          "image": "https://www.thespruce.com/thmb/nL7rcJa0ie1xE8NvZZNlDhn1L2w=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/grow-dracaena-marginata-indoors-1902749-2-983c52a2805144d899408949969a5728.jpg",
+          "waterSchedule": [3, 5]
       },
       {
           "id": 8,
           "botanicalName": "Phalaenopsis Aphrodite",
           "commonName": "Orchid",
+          "image": "https://images.squarespace-cdn.com/content/v1/5c637adb90f9042f4c2f8770/1551889923235-X54ET93F3PK80056O133/IMG_2651.JPG",
           "waterSchedule": [1]
       },
       {
           "id": 9,
           "botanicalName": "Hoya Pubicalyx",
           "commonName": "Porcelain Flower",
-          "waterSchedule": ["Wednesdays"]
+          "image": "https://cdn.shopify.com/s/files/1/0662/5489/products/Hoya_pubicalyx_-_pistils_nursery-2_1391x1800.jpg",
+          "waterSchedule": [3]
       },
       {
           "id": 10,
           "botanicalName": "Monstera Adansonii",
           "commonName": "Swiss Cheese Plant",
+          "image": "https://i.etsystatic.com/10494852/r/il/fd524a/3254978529/il_1588xN.3254978529_6f69.jpg",
           "waterSchedule": [2, 5]
       },
       {
           "id": 11,
           "botanicalName": "Rhaphidophora Tetrasperma",
           "commonName": "Mini Monstera",
-          "waterSchedule": [2, 5]
+          "image": "https://www.myhomenature.com/media/catalog/product/cache/ffd31fc79275d8558301739491be228c/r/h/rhaphidophora_tetrasperma5.jpg",
+          "waterSchedule": [2, 4]
       },
       {
           "id": 12,
           "botanicalName": "Begonia Maculata",
           "commonName": "Spotted Begonia",
-          "waterSchedule": [2, 5]
+          "image": "https://www.modandmint.com/wp-content/uploads/2019/08/begonia-maculata.jpg",
+          "waterSchedule": [1, 5]
       },
       {
           "id": 13,
           "botanicalName": "Tradescantia Nanouk",
           "commonName": "Fantasy Venice",
-          "waterSchedule": [2, 5]
+          "image": "https://i.etsystatic.com/25839347/r/il/c752cb/3365117600/il_1588xN.3365117600_1aq9.jpg",
+          "waterSchedule": [2, 6]
       },
       {
           "id": 14,
           "botanicalName": "Anthurium Magnificum",
           "commonName": "The Velvety Anthurium",
-          "waterSchedule": [2, 5]
+          "image": "https://i.etsystatic.com/22631993/r/il/8b3243/3297602783/il_1588xN.3297602783_43ag.jpg",
+          "waterSchedule": [3, 5]
       },
       {
           "id": 15,
           "botanicalName": "Yucca Elephantipes",
           "commonName": "Spineless Yucca",
-          "waterSchedule": [2, 5]
+          "image": "https://cdn.webshopapp.com/shops/30495/files/308867580/yucca-elephantipes-palm-lily.jpg",
+          "waterSchedule": [4, 0]
       }
   ]
 }
