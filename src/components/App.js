@@ -3,6 +3,7 @@ import React, { useEffect, useState} from "react";
 import { Route, Switch } from "react-router-dom";
 import NavBar from "./NavBar";
 import Home from "./Home";
+import NewPlantForm from "./NewPlantForm"
 
 function App() {
   const [plants, setPlants] = useState([])
@@ -19,6 +20,9 @@ function App() {
     <Switch>
       <Route exact path="/">
         <Home plants={plants}/>
+      </Route>
+      <Route exact path="/new-plant">
+        <NewPlantForm />
       </Route>
     </Switch>
   </div>
