@@ -4,91 +4,92 @@
           "id": 1,
           "botanicalName": "Nephrolepis Cordifolia ‘Duffii’",
           "commonName": "Lemon Button Fern",
-          "waterSchedule": ["Monday", "Wednesday", "Friday", "Sunday"]
+          "image": "https://cdn.shopify.com/s/files/1/0244/0642/5680/products/1-Fern-LemonButter-4MAIN_6899bed7-7ca7-4b7b-9e2d-ececf6dd862c_2000x.jpg",
+          "waterSchedule": [1, 3, 5, 0]
       },
       {
           "id": 2,
           "botanicalName": "Hedera Helix",
           "commonName": "English Ivy",
-          "waterSchedule": ["Tuesday", "Friday"]
+          "waterSchedule": [2, 5]
       },
       {
           "id": 3,
           "botanicalName": "Rhipaslis Paradoxa",
           "commonName": "Chain Cactus",
-          "waterSchedule": ["Tuesday", "Friday"]
+          "waterSchedule": [2, 5]
       },
       {
           "id": 4,
           "botanicalName": "Scindapsus Pictus 'Argyraeus'",
           "commonName": "Satin Pothos",
-          "waterSchedule": ["Tuesday", "Friday"]
+          "waterSchedule": [2, 5]
       },
       {
           "id": 5,
           "botanicalName": "Philodendron Hederaceum",
           "commonName": "Velvet Leaf Philodendron",
-          "waterSchedule": ["Tuesday", "Friday"]
+          "waterSchedule": [2, 5]
       },
       {
           "id": 6,
           "botanicalName": "Philodendron Scandens",
           "commonName": "Sweetheart Plant",
-          "waterSchedule": ["Tuesday", "Friday"]
+          "waterSchedule": [2, 5]
       },
       {
           "id": 7,
           "botanicalName": "Dracaena",
           "commonName": "Dracaena",
-          "waterSchedule": ["Tuesday", "Friday"]
+          "waterSchedule": [2, 5]
       },
       {
           "id": 8,
           "botanicalName": "Phalaenopsis Aphrodite",
           "commonName": "Orchid",
-          "waterSchedule": ["Mondays"]
+          "waterSchedule": [1]
       },
       {
           "id": 9,
           "botanicalName": "Hoya Pubicalyx",
-          "commonName": "English Ivy",
+          "commonName": "Porcelain Flower",
           "waterSchedule": ["Wednesdays"]
       },
       {
           "id": 10,
           "botanicalName": "Monstera Adansonii",
           "commonName": "Swiss Cheese Plant",
-          "waterSchedule": ["Tuesday", "Friday"]
+          "waterSchedule": [2, 5]
       },
       {
           "id": 11,
           "botanicalName": "Rhaphidophora Tetrasperma",
           "commonName": "Mini Monstera",
-          "waterSchedule": ["Tuesday", "Friday"]
+          "waterSchedule": [2, 5]
       },
       {
           "id": 12,
           "botanicalName": "Begonia Maculata",
           "commonName": "Spotted Begonia",
-          "waterSchedule": ["Tuesday", "Friday"]
+          "waterSchedule": [2, 5]
       },
       {
           "id": 13,
           "botanicalName": "Tradescantia Nanouk",
           "commonName": "Fantasy Venice",
-          "waterSchedule": ["Tuesday", "Friday"]
+          "waterSchedule": [2, 5]
       },
       {
           "id": 14,
           "botanicalName": "Anthurium Magnificum",
           "commonName": "The Velvety Anthurium",
-          "waterSchedule": ["Tuesday", "Friday"]
+          "waterSchedule": [2, 5]
       },
       {
           "id": 15,
           "botanicalName": "Yucca Elephantipes",
           "commonName": "Spineless Yucca",
-          "waterSchedule": ["Tuesday", "Friday"]
+          "waterSchedule": [2, 5]
       }
   ]
 }

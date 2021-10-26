@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const linkStyles = {
   display: "inline-flex",
+  font: "Lucida Console",
   padding: "12px",
   margin: "0 7px 7px",
   background: "white",
