@@ -1,0 +1,24 @@
+
+.weekDays-selector input[type=checkbox] + label {
+  display: inline-block;
+  border-radius: 6px;
+  background: #dddddd;
+  height: 20px;
+  width: 20px;
+  margin-right: 3px;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.weekDays-selector input[type=checkbox]:checked + label {
+  background: #1c1d1c;
+  color: #ffffff;
+}
+
+/* h1 {
+    display: "inline-flex";
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: "Lucida Console";
+} */

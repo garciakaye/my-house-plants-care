@@ -1,14 +1,18 @@
 import React, { useState } from "react";
+import '../NewPlantForm.css';
+import Multiselect from 'multiselect-react-dropdown';
+
+// const weekDays = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"]
 
 function NewPlantForm() {
   const [formData, setFormData] = useState({
-    prompt: "",
-    answer1: "",
-    answer2: "",
-    answer3: "",
-    answer4: "",
-    correctIndex: 0,
+    botanicalName: "",
+    commonName: "",
+    image: "",
+    waterSchedule: [],
   });
+
+  const optionsArr = [{name: "Monday", id: 1},{name: "Tuesday", id: 2}, {name: "Wednesday", id: 3},{name: "Thursday", id: 4}, {name: "Friday", id: 4}, {name: "Saturday", id: 6}, {name: "Sunday", id: 0}]
 
   function handleChange(event) {
     setFormData({
@@ -19,87 +23,66 @@ function NewPlantForm() {
 
   function handleSubmit(event) {
     event.preventDefault();
+    // const stringToArray = formData.waterSchedule.toLowerCase().replace(/[, ]+/g, " ").trim().split(" ")
+    // const daysToWater = stringToArray.map((day) => weekDays.indexOf(day))
+    //   map will iterate on each iteration it will return an array that contains each value of the iteration
+    // const dayArray = formData.waterSchedule.filter((selectedDay) => selectedDay.value !== formData.waterSchedule)
+    // const daysToWater = dayArray.map((day) => weekDays.indexOf(day))
+    console.log(formData)
     fetch("http://localhost:3004/plants", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        prompt: formData.prompt,
-        answers: [
-          formData.answer1,
-          formData.answer2,
-          formData.answer3,
-          formData.answer4,
-        ],
-        correctIndex: parseInt(formData.correctIndex),
+        botanicalName: formData.botanicalName,  
+        commonName: formData.commonName,
+        image: formData.image,
+        waterSchedule: formData.waterSchedule,
       }),
     });
   }
 
   return (
     <section>
-      <h1>New Question</h1>
+      <h1>New Plant</h1>
       <form onSubmit={handleSubmit}>
         <label>
-          Prompt:
+          Botanical Name:
           <input
             type="text"
-            name="prompt"
-            value={formData.prompt}
+            name="botanicalName"
+            value={formData.botanicalName}
             onChange={handleChange}
           />
         </label>
         <label>
-          Answer 1:
+          Common Name:
           <input
             type="text"
-            name="answer1"
-            value={formData.answer1}
+            name="commonName"
+            value={formData.commonName}
             onChange={handleChange}
           />
         </label>
         <label>
-          Answer 2:
+          Image URL:
           <input
             type="text"
-            name="answer2"
-            value={formData.answer2}
+            name="image"
+            value={formData.image}
             onChange={handleChange}
           />
         </label>
         <label>
-          Answer 3:
-          <input
-            type="text"
-            name="answer3"
-            value={formData.answer3}
-            onChange={handleChange}
-          />
+          Water Schedule:
+            <Multiselect
+                options={optionsArr} displayValue="name" name="waterSchedule" onSelect={(allDaysOfWeek, selectedDayOfWeek) => {
+                    const daysOfWeek = allDaysOfWeek.map(dayOfWeek => dayOfWeek.id);
+                    setFormData({...formData, waterSchedule: daysOfWeek})}}
+            />
         </label>
-        <label>
-          Answer 4:
-          <input
-            type="text"
-            name="answer4"
-            value={formData.answer4}
-            onChange={handleChange}
-          />
-        </label>
-        <label>
-          Correct Answer:
-          <select
-            name="correctIndex"
-            value={formData.correctIndex}
-            onChange={handleChange}
-          >
-            <option value="0">{formData.answer1}</option>
-            <option value="1">{formData.answer2}</option>
-            <option value="2">{formData.answer3}</option>
-            <option value="3">{formData.answer4}</option>
-          </select>
-        </label>
-        <button type="submit">Add Question</button>
+        <button type="submit">Add New Plant</button>
       </form>
     </section>
   );
