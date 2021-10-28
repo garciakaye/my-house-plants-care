@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import '../NewPlantForm.css';
 import Multiselect from 'multiselect-react-dropdown';
+import { Form } from "react-bootstrap";
 
 // const weekDays = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"]
 
@@ -23,11 +24,6 @@ function NewPlantForm() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    // const stringToArray = formData.waterSchedule.toLowerCase().replace(/[, ]+/g, " ").trim().split(" ")
-    // const daysToWater = stringToArray.map((day) => weekDays.indexOf(day))
-    //   map will iterate on each iteration it will return an array that contains each value of the iteration
-    // const dayArray = formData.waterSchedule.filter((selectedDay) => selectedDay.value !== formData.waterSchedule)
-    // const daysToWater = dayArray.map((day) => weekDays.indexOf(day))
     console.log(formData)
     fetch("http://localhost:3004/plants", {
       method: "POST",
@@ -45,45 +41,65 @@ function NewPlantForm() {
 
   return (
     <section>
-      <h1>New Plant</h1>
-      <form onSubmit={handleSubmit}>
-        <label>
-          Botanical Name:
-          <input
+      <h1>Add Your New Plant</h1>
+      <Form className="form" onSubmit={handleSubmit}>
+          <Form.Group className="mb-3">
+          <Form.Label>Botanical Name:</Form.Label>
+          <input className="form-control"
+            id="botanicalName"
             type="text"
             name="botanicalName"
+            placeholder="Dimorphotheca Aurantica"
             value={formData.botanicalName}
             onChange={handleChange}
           />
-        </label>
-        <label>
-          Common Name:
-          <input
+        </Form.Group>
+        <Form.Group className="mb-3">
+          <Form.Label>Common Name:</Form.Label>
+          <input className="form-control"
+            id="commonName"
             type="text"
             name="commonName"
+            placeholder="African Daisy"
             value={formData.commonName}
             onChange={handleChange}
           />
-        </label>
-        <label>
-          Image URL:
-          <input
+        </Form.Group>
+        <Form.Group className="mb-3">
+          <Form.Label>Image URL:</Form.Label>
+          <input className="form-control"
+            id="image"
             type="text"
             name="image"
+            placeholder="https://www.example/image.jpg"
             value={formData.image}
             onChange={handleChange}
           />
-        </label>
-        <label>
-          Water Schedule:
+        </Form.Group>
+        <Form.Group className="mb-3">
+        <Form.Label>Water Schedule:</Form.Label>
             <Multiselect
-                options={optionsArr} displayValue="name" name="waterSchedule" placeholder="📅" showCheckbox onSelect={(allDaysOfWeek, selectedDayOfWeek) => {
+                id="css_custom" 
+                options={optionsArr} 
+                displayValue="name" 
+                name="waterSchedule" 
+                placeholder="📅" 
+                showCheckbox 
+                style={{
+                    chips: {
+                      background: 'grey'
+                    },
+                    multiselectContainer: {
+                      color: 'grey'
+                    }
+                  }}
+                onSelect={(allDaysOfWeek, selectedDayOfWeek) => {
                     const daysOfWeek = allDaysOfWeek.map(dayOfWeek => dayOfWeek.id);
                     setFormData({...formData, waterSchedule: daysOfWeek})}}
             />
-        </label>
-        <button type="submit">Add New Plant</button>
-      </form>
+        </Form.Group>
+        <button type="submit">🪴Add New Plant🪴</button>
+      </Form>
     </section>
   );
 }

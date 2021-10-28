@@ -16,9 +16,16 @@
   color: #ffffff;
 }
 
-/* h1 {
+h1 {
     display: "inline-flex";
     flex-wrap: wrap;
     text-align: center;
     font-family: "Lucida Console";
-} */
+}
+
+.form {
+    width: 450px;
+    margin: auto;
+    font-family: "Lucida Console";
+    color: black;
+}

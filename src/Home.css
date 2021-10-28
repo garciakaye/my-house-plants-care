@@ -16,15 +16,33 @@ h2 {
 
 
 img {
-    /* display: "inline-flex"; */
-    border-radius: 50%;
+    display: "inline-flex";
+    object-fit: cover;
+    overflow: hidden;
+    /* border-radius: 70%; */
+    /* object-fit: contain; */
     width:  120px;
     height: 120px;
-    /* object-fit: cover;
     margin-left: auto;
-    margin-right: auto; */
+    margin-right: auto;
     
 }
+
+.scheduled-plants {
+    margin-top: 8em;
+}
+
+.btn-group-lg{
+    float: right;
+}
+
+div.col {
+    margin-top: 4em;
+}
+
+/* div.row {
+    margin: auto;
+} */
 
 /* .scheduled-plants {
     display: flex;
