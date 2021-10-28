@@ -1,6 +1,7 @@
 import React from "react";
 import '../Home.css';
 import { format, getDay } from "date-fns";
+import { Card, Container, Row, Col } from "react-bootstrap";
 
 function Home( {plants} ) {
     // const [plants, setPlants] = useState([])
@@ -23,16 +24,22 @@ function Home( {plants} ) {
   <div className="date">
     <h1>It's {dayFormatted}, {dateFormatted}</h1>
     <h2>Please Take Care Of These Plants Today</h2>
-    <ul className="scheduled-plants">
+    <Container className="scheduled-plants">  
         {plantsToPrint.map((plants) => {
-            return (
-               <div className="column" key={plants.id}> 
-                <h3>{plants.commonName}</h3>
-                <img src={plants.image} alt={plants.commonName} />
-                </div>
+            return ( 
+                <Row key={plants.id} className='row-cols-2 row-cols-md-3 g-4'>
+                    <Col className="column">
+                        <Card className='h-100'>
+                            <Card.Img variant="top" src={plants.image} alt={plants.commonName} />
+                            <Card.Body>
+                                <Card.Text>{plants.commonName} <button type="button" className="btn btn-link">🪦</button> </Card.Text>
+                            </Card.Body>
+                        </Card>
+                    </Col>  
+              </Row>    
             )
         })}
-    </ul>
+    </Container> 
   </div>
   );
 }

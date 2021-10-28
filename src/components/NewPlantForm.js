@@ -77,7 +77,7 @@ function NewPlantForm() {
         <label>
           Water Schedule:
             <Multiselect
-                options={optionsArr} displayValue="name" name="waterSchedule" onSelect={(allDaysOfWeek, selectedDayOfWeek) => {
+                options={optionsArr} displayValue="name" name="waterSchedule" placeholder="📅" showCheckbox onSelect={(allDaysOfWeek, selectedDayOfWeek) => {
                     const daysOfWeek = allDaysOfWeek.map(dayOfWeek => dayOfWeek.id);
                     setFormData({...formData, waterSchedule: daysOfWeek})}}
             />

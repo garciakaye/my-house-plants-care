@@ -19,7 +19,8 @@
       "image": "http://mygardenforest.com/wp-content/uploads/2019/03/english-ivy.jpg",
       "waterSchedule": [
         2,
-        5
+        5,
+        4
       ]
     },
     {
@@ -29,7 +30,8 @@
       "image": "https://www.pulpkaktus.com/wp-content/uploads/2020/08/Rhipsalis_paradoxa_chain_cactus_tapered_cement_planter-2.jpg",
       "waterSchedule": [
         3,
-        5
+        5,
+        4
       ]
     },
     {
@@ -39,7 +41,8 @@
       "image": "https://cdn.shopify.com/s/files/1/2601/2952/products/IMG_2554_1080x.jpg",
       "waterSchedule": [
         3,
-        5
+        5,
+        4
       ]
     },
     {
@@ -153,21 +156,12 @@
     {
       "botanicalName": "Ceropegia",
       "commonName": "String of Hearts",
-      "image": "https://microplantstudio.com/wp-content/uploads/2020/02/peperomia-string-of-hearts.jpg",
+      "image": "https://roomforinspo.com/wp-content/uploads/2021/01/String-of-hearts-4.png",
       "waterSchedule": [
-        3,
-        4
-      ],
-      "id": 18
-    },
-    {
-      "botanicalName": "",
-      "commonName": "",
-      "image": "",
-      "waterSchedule": [
+        4,
         0
       ],
-      "id": 19
+      "id": 20
     }
   ]
 }
