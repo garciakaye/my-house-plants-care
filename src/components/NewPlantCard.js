@@ -2,7 +2,7 @@ import React from "react";
 import { Card, Container, Row, Col, Button } from "react-bootstrap";
 
 
-function PlantCard({ plant, onDeletePlant }) {
+function NewPlantCard({ plant, onDeletePlant }) {
 
 
 return (
@@ -25,4 +25,4 @@ return (
 
 
 
-export default PlantCard;
+export default NewPlantCard;

@@ -1,10 +1,15 @@
 import React from "react";
+import PlantCard from "./NewPlantCard";
 
 
+function PlantDetails( {plants}){
 
-function PlantDetails(){
 
-
+    return (
+        <div>
+           
+        </div>
+    )
 }
 
 

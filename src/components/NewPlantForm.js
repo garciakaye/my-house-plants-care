@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import '../NewPlantForm.css';
 import Multiselect from 'multiselect-react-dropdown';
 import { Form } from "react-bootstrap";
-import PlantCard from "./PlantCard"
+import NewPlantCard from "./NewPlantCard"
 
 // const weekDays = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"]
 
@@ -53,7 +53,7 @@ function NewPlantForm() {
   }
 
     const renderPlantCard = plant => (
-        <PlantCard
+        <NewPlantCard
             key={plant.id}
             plant={plant}
         />
