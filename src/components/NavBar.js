@@ -37,7 +37,7 @@ function NavBar() {
       New Plant
     </NavLink>
     <NavLink
-      to="/details"
+      to="/my-plants"
       exact
       style={linkStyles}
       activeStyle={{
@@ -45,7 +45,7 @@ function NavBar() {
         color: "white"
       }} 
     >
-      Details
+      My Plants
     </NavLink>
   </div>
   );

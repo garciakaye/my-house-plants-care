@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import '../NewPlantForm.css';
 import Multiselect from 'multiselect-react-dropdown';
 import { Form } from "react-bootstrap";
+import PlantCard from "./PlantCard"
 
 // const weekDays = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"]
 
 function NewPlantForm() {
+  const [newPlant, setNewPlant] = useState({}) 
   const [formData, setFormData] = useState({
     botanicalName: "",
     commonName: "",
@@ -13,7 +15,14 @@ function NewPlantForm() {
     waterSchedule: [],
   });
 
-  const optionsArr = [{name: "Monday", id: 1},{name: "Tuesday", id: 2}, {name: "Wednesday", id: 3},{name: "Thursday", id: 4}, {name: "Friday", id: 4}, {name: "Saturday", id: 6}, {name: "Sunday", id: 0}]
+  const optionsArr = [{name: "Monday", id: 1},{name: "Tuesday", id: 2}, {name: "Wednesday", id: 3},{name: "Thursday", id: 4}, {name: "Friday", id: 5}, {name: "Saturday", id: 6}, {name: "Sunday", id: 0}]
+
+  const initialFormValues = {
+    botanicalName: "", 
+    commonName: "",
+    image: "",
+    waterSchedule: [],
+  }
 
   function handleChange(event) {
     setFormData({
@@ -22,22 +31,33 @@ function NewPlantForm() {
     });
   }
 
+
   function handleSubmit(event) {
     event.preventDefault();
-    console.log(formData)
+    const addedPlant = {
+        botanicalName: formData.botanicalName,  
+        commonName: formData.commonName,
+        image: formData.image,
+        waterSchedule: formData.waterSchedule,
+      }
     fetch("http://localhost:3004/plants", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
       },
-      body: JSON.stringify({
-        botanicalName: formData.botanicalName,  
-        commonName: formData.commonName,
-        image: formData.image,
-        waterSchedule: formData.waterSchedule,
-      }),
-    });
+      body: JSON.stringify(addedPlant),
+    })
+        .then((r) => r.json())
+        .then((newlyAddedPlant) => setNewPlant(newlyAddedPlant))
+    setFormData(initialFormValues)
   }
+
+    const renderPlantCard = plant => (
+        <PlantCard
+            key={plant.id}
+            plant={plant}
+        />
+    )
 
   return (
     <section>
@@ -100,6 +120,10 @@ function NewPlantForm() {
         </Form.Group>
         <button type="submit">🪴Add New Plant🪴</button>
       </Form>
+    {newPlant.id
+        ? renderPlantCard(newPlant)
+        : null
+        }  
     </section>
   );
 }
