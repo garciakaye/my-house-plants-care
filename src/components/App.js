@@ -46,7 +46,10 @@ function App() {
         <NewPlantForm onAddPlant={handleAddPlant}/>
       </Route>
       <Route exact path="/my-plants">
-        <PlantDetails />
+        <PlantDetails 
+          plants={plants}
+          onDeletePlant={handleDeletePlant}
+        />
       </Route>
     </Switch>
   </div>

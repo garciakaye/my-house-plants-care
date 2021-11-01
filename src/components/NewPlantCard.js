@@ -2,7 +2,7 @@ import React from "react";
 import { Card, Container, Row, Col, Button } from "react-bootstrap";
 
 
-function NewPlantCard({ plant, onDeletePlant }) {
+function NewPlantCard({ plant }) {
 
 
 return (

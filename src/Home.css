@@ -26,6 +26,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     
+    
 }
 
 .scheduled-plants {
@@ -38,8 +39,21 @@ img {
 
 div.col {
     margin-top: 4em;
-    
 }
+
+.emoji-button {
+    border: none;
+    background: none;
+    padding: 0 0.25rem;
+    cursor: pointer;
+    background-color: white;
+  }
+  
+.emoji-button.favorite {
+    color: transparent;
+    text-shadow: 0 0 0 gray;
+    background-color: white;
+  }
 
 /* div.row {
     margin: auto;

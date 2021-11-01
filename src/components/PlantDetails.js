@@ -1,13 +1,17 @@
 import React from "react";
-import PlantCard from "./NewPlantCard";
+import MyPlantsList from "./MyPlantsList";
 
 
-function PlantDetails( {plants}){
 
+function PlantDetails( {plants, onDeletePlant}){
+    
+    const renderPlantList = plants.map((plant) => {
+        return <MyPlantsList  key={plant.id} plant={plant} onDeletePlant={onDeletePlant}/>
+    })
 
     return (
         <div>
-           
+           {renderPlantList}
         </div>
     )
 }
