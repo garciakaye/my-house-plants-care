@@ -28,7 +28,7 @@ function Home( {plants, onDeletePlant} ) {
         {plantsToPrint.map((plant) => {
             return ( 
                 <Row key={plant.id} className="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                    <Col>
+                    <Col className="align-items-stretch" >
                         <Card>
                             <Card.Header>{plant.commonName}</Card.Header>
                             <Card.Img variant="top" src={plant.image} alt={plant.commonName} />

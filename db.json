@@ -95,7 +95,7 @@
       "commonName": "Orchid",
       "image": "https://www.pngitem.com/pimgs/m/6-60035_9-png-white-orchid-white-orchids-orchid-png.png",
       "fertilizerSchedule": "Once every other week.",
-      "waterInstructions": "Water in the sink for 15 seconds and drain for 15 minutes.",
+      "waterInstructions": "Water for 15-30 seconds.",
       "waterSchedule": [
         1
       ]
@@ -204,6 +204,18 @@
         5
       ],
       "id": 21
+    },
+    {
+      "botanicalName": "Dimorphotheca Aurantica",
+      "commonName": "African Daisy",
+      "image": "https://www.thespruce.com/thmb/0Kzs9sWv7aj-P_wU-4t5_vkH_X0=/3300x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/KaraRiley-15-db4edba9ae6545d3b8d418c683dd7588.jpg",
+      "fertilizerSchedule": "Once a month",
+      "waterInstructions": "Soil must be moist but not soggy",
+      "waterSchedule": [
+        1,
+        2
+      ],
+      "id": 22
     }
   ]
 }

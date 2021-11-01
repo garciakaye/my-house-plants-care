@@ -12,6 +12,8 @@ function NewPlantForm() {
     botanicalName: "",
     commonName: "",
     image: "",
+    fertilizerSchedule: "",
+    waterInstructions: "",
     waterSchedule: [],
   });
 
@@ -21,6 +23,8 @@ function NewPlantForm() {
     botanicalName: "", 
     commonName: "",
     image: "",
+    fertilizerSchedule: "",
+    waterInstructions: "",
     waterSchedule: [],
   }
 
@@ -38,6 +42,8 @@ function NewPlantForm() {
         botanicalName: formData.botanicalName,  
         commonName: formData.commonName,
         image: formData.image,
+        fertilizerSchedule: formData.fertilizerSchedule,
+        waterInstructions: formData.waterInstructions,
         waterSchedule: formData.waterSchedule,
       }
     fetch("http://localhost:3004/plants", {
@@ -93,6 +99,28 @@ function NewPlantForm() {
             name="image"
             placeholder="https://www.example/image.jpg"
             value={formData.image}
+            onChange={handleChange}
+          />
+        </Form.Group>
+        <Form.Group className="mb-3">
+          <Form.Label>Fertilizer Care (optional):</Form.Label>
+          <input className="form-control"
+            id="fertilizerSchedule"
+            type="text"
+            name="fertilizerSchedule"
+            placeholder="Once a month"
+            value={formData.fertilizerSchedule}
+            onChange={handleChange}
+          />
+        </Form.Group>
+        <Form.Group className="mb-3">
+          <Form.Label>Water Instructions (optional):</Form.Label>
+          <input className="form-control"
+            id="waterInstructions"
+            type="text"
+            name="waterInstructions"
+            placeholder="Water if topsoil is completely dry"
+            value={formData.waterInstructions}
             onChange={handleChange}
           />
         </Form.Group>
