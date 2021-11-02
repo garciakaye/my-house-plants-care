@@ -1,6 +1,6 @@
 import React from "react";
 import MyPlantsList from "./MyPlantsList";
-
+import {Container} from "react-bootstrap";
 
 
 function PlantDetails( {plants, onDeletePlant}){
@@ -10,9 +10,9 @@ function PlantDetails( {plants, onDeletePlant}){
     })
 
     return (
-        <div>
+        <Container fluid>
            {renderPlantList}
-        </div>
+        </Container>
     )
 }
 

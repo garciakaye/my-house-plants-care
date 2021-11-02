@@ -7,7 +7,7 @@ function MyPlantsList({ plant, onDeletePlant }){
 
 
 return (
-   <Container className="my-plant-list" fluid> 
+   
        <Row className="col-lg-3 col-md-3 col-sm-6 col-xs-12">
            <Col className="align-items-stretch">
                 <Card className="card">
@@ -19,7 +19,7 @@ return (
                 </Card>
             </Col>
        </Row> 
-    </Container>
+    
     )
 }
 
