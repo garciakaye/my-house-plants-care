@@ -12,7 +12,7 @@ function HomePlantCard( {plant, onDeletePlant} ) {
                             <Card.Header className="card-header">{plant.commonName}</Card.Header>
                             <Card.Img variant="top" src={plant.image} alt={plant.commonName} />
                             <Card.Body>
-                                <Card.Text className="card-text">{plant.waterInstructions}</Card.Text>
+                                <Card.Text className="home-card-text">{plant.waterInstructions}</Card.Text>
                                 {waterPlant ? (
                                     <Button
                                     onClick={() => setWaterPlant(false)}

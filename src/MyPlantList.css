@@ -1,0 +1,21 @@
+.card{
+    font-family: "Montserrat"
+}
+
+.card-subtitle {
+    font-style: italic;
+}
+.card-title.h5{
+    font-size: 12px;
+}
+
+p.card-text {
+    font-size: 8px;
+    font-style: normal;
+    text-align: center;
+}
+
+button.btn-xs {
+    font-size: 7px;
+    font-family: "Montserrat"
+}
