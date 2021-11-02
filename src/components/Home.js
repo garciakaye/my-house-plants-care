@@ -23,7 +23,7 @@ function Home( {plants, onDeletePlant} ) {
     return (
      <div className="date">
          {
-             
+
          }
         <h1>It's {dayFormatted}, {dateFormatted}</h1>
         <h2>Please Take Care Of These Plants Today</h2>
