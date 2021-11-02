@@ -2,15 +2,19 @@
     font-family: "Montserrat"
 }
 
-.card-subtitle {
+.card-subtitle.h6 {
     font-style: italic;
+    font-size: 8px;
+    text-align: center;
 }
 .card-title.h5{
-    font-size: 12px;
+    font-size: 10px;
+    text-align: center;
+    font-weight: bold;
 }
 
 p.card-text {
-    font-size: 8px;
+    font-size: 7px;
     font-style: normal;
     text-align: center;
 }
@@ -18,4 +22,16 @@ p.card-text {
 button.btn-xs {
     font-size: 7px;
     font-family: "Montserrat"
+}
+
+.card-img {
+    display: "inline-flex";
+    object-fit: cover;
+    overflow: hidden;
+    /* border-radius: 70%; */
+    /* object-fit: contain; */
+    width:  120px;
+    height: 120px;
+    margin-left: auto;
+    margin-right: auto;
 }

@@ -17,12 +17,12 @@ function HomePlantCard( {plant, onDeletePlant} ) {
                                     <Button
                                     onClick={() => setWaterPlant(false)}
                                     variant="light"
-                                    className="emoji-button favorite active">💧</Button>
+                                    className="emoji-button favorite active">💦</Button>
                                 ) : (
                                     <Button
                                     onClick={() => setWaterPlant(true)}
                                     variant="light"
-                                    className="emoji-button favorite">💧</Button>
+                                    className="emoji-button favorite">💦</Button>
                                 )}
                                 <Button plant-id={plant.id} className="btn-group-lg" variant="light" onClick={() => onDeletePlant(plant)}>🪦</Button>
                             </Card.Body>

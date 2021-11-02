@@ -62,11 +62,13 @@ div.col {
     margin-bottom: 10x;
     font-family: "Montserrat"
 }
-.home-card-text {
+.home-card-text.card-text {
     font-style: oblique;
+    font-size: 10px;
 }
 
 .card-header {
     font-weight: bold;
+    text-align: center;
 }
 
