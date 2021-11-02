@@ -1,17 +1,18 @@
 import React, {useState} from 'react';
+import '../Home.css';
 import { Card, Row, Col, Button } from "react-bootstrap";
 
 function HomePlantCard( {plant, onDeletePlant} ) {
     const [waterPlant, setWaterPlant] = useState(false)
     
     return (
-        <Row key={plant.id} className="col-lg-3 col-md-3 col-sm-6 col-xs-6">
-                    <Col className="align-items-stretch" >
-                        <Card className="card">
-                            <Card.Header>{plant.commonName}</Card.Header>
+        <Row key={plant.id} className="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                    <Col >
+                        <Card border="dark" className="card">
+                            <Card.Header className="card-header">{plant.commonName}</Card.Header>
                             <Card.Img variant="top" src={plant.image} alt={plant.commonName} />
                             <Card.Body>
-                                <Card.Text>{plant.waterInstructions}</Card.Text>
+                                <Card.Text className="card-text">{plant.waterInstructions}</Card.Text>
                                 {waterPlant ? (
                                     <Button
                                     onClick={() => setWaterPlant(false)}

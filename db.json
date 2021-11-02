@@ -168,7 +168,8 @@
       "waterInstructions": "Soil should always be moist.",
       "waterSchedule": [
         3,
-        5
+        5,
+        2
       ]
     },
     {
@@ -191,7 +192,8 @@
       "waterInstructions": "Water if top 2-3 inches of soil is dry.",
       "waterSchedule": [
         4,
-        0
+        0,
+        2
       ],
       "id": 20
     }

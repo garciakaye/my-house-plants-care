@@ -2,14 +2,14 @@ h1 {
     display: "inline-flex";
     flex-wrap: wrap;
     text-align: center;
-    font-family: "Lucida Console";
+    font-family: "Montserrat";
 }
 
 h2 {
     display: "inline-flex";
     flex-wrap: wrap;
     text-align: center;
-    font-family: "Lucida Console";
+    font-family: "Montserrat";
     font-size: 20px;
 }
 
@@ -29,16 +29,15 @@ img {
     
 }
 
-.scheduled-plants {
-    margin-top: 8em;
-}
 
 .btn-group-lg{
     float: right;
 }
 
 div.col {
-    margin-top: 4em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: 3em;
 }
 
 .emoji-button {
@@ -56,24 +55,18 @@ div.col {
   }
 
 .card {
+    margin: auto;
+    float: none;
     width: 200px;
     height: 200px;
+    margin-bottom: 10x;
+    font-family: "Montserrat"
+}
+.card-text {
+    font-style: oblique;
 }
 
-/* div.row {
-    margin: auto;
-} */
+.card-header {
+    font-weight: bold;
+}
 
-/* .scheduled-plants {
-    display: flex;
-    flex-wrap: wrap;
-    font-family: "Lucida Console";
-    font-size: 10px;
-    text-align: center;
-  } */
-
-  /* .column { */
-    /* flex-wrap: wrap; */
-    /* flex: 25%;
-    padding: 5px;
-  } */

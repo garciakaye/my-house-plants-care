@@ -21,20 +21,17 @@ function Home( {plants, onDeletePlant} ) {
     
 
     return (
-     <div className="date">
-         {
-
-         }
+     <div className="plants-to-water">
         <h1>It's {dayFormatted}, {dateFormatted}</h1>
-        <h2>Please Take Care Of These Plants Today</h2>
-    <Container className="scheduled-plants" fluid>  
-        {plantsToPrint.map((plant) => {
-            return ( 
-                <HomePlantCard plant={plant} onDeletePlant={onDeletePlant} />  
-            )
-        })}
-    </Container>
-  </div>
+        <h2>Please Water These Plants Today</h2>
+        <Container className="home-plant-cards" fluid>  
+            {plantsToPrint.map((plant) => {
+                return ( 
+                    <HomePlantCard key={plant.id} plant={plant} onDeletePlant={onDeletePlant} />  
+                )
+            })}
+        </Container>
+    </div>
   );
 }
 
