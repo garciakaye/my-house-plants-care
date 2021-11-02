@@ -3,17 +3,28 @@ import { Card, Container, Row, Col, Button } from "react-bootstrap";
 
 function MyPlantsList({ plant, onDeletePlant }){
 
-    return (
-        <Container fluid className="plant-list">
-        <Card>
-            <Card.Header>{plant.commonName} </Card.Header>
-            <Card.Img variant="top" src={plant.image} alt={plant.commonName} />
-        </Card>
-        </Container>  
-        )
+
+
+
+return (
+   <Container className="my-plant-list" fluid> 
+       <Row className="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+           <Col className="align-items-stretch">
+                <Card className="card">
+                    <Card.Img variant="top" src={plant.image} alt={plant.commonName} />
+                    <Card.Body className="card-body">
+                        <Card.Title> {plant.commonName} </Card.Title>
+                        <Card.Text> {plant.waterInstructions} </Card.Text>
+                    </Card.Body>
+                </Card>
+            </Col>
+       </Row> 
+    </Container>
+    )
 }
 
 
 
 
 export default MyPlantsList;
+

@@ -21,9 +21,9 @@ function Home( {plants, onDeletePlant} ) {
     
 
     return (
-  <div className="date">
-    <h1>It's {dayFormatted}, {dateFormatted}</h1>
-    <h2>Please Take Care Of These Plants Today</h2>
+     <div className="date">
+        <h1>It's {dayFormatted}, {dateFormatted}</h1>
+        <h2>Please Take Care Of These Plants Today</h2>
     <Container className="scheduled-plants">  
         {plantsToPrint.map((plant) => {
             return ( 
@@ -53,7 +53,6 @@ function Home( {plants, onDeletePlant} ) {
             )
         })}
     </Container>
-    {/* {plantCards} */}
   </div>
   );
 }

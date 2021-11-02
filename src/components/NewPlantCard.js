@@ -1,6 +1,6 @@
 import React from "react";
 import '../NewPlantCard.css';
-import { Card, Container, Row, Col, Button } from "react-bootstrap";
+import { Card, Container } from "react-bootstrap";
 
 
 function NewPlantCard({ plant }) {
