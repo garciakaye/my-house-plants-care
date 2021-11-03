@@ -24,7 +24,7 @@ function HomePlantCard( {plant, onDeletePlant} ) {
                                     variant="light"
                                     className="emoji-button favorite">💦</Button>
                                 )}
-                                <Button plant-id={plant.id} className="btn-group-lg" variant="light" onClick={() => onDeletePlant(plant)}>🪦</Button>
+                                <Button plant-id={plant.id} className="btn-group-lg" variant="none" onClick={() => onDeletePlant(plant)}>🪦</Button>
                             </Card.Body>
                         </Card>
                     </Col>  

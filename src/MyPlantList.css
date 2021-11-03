@@ -19,9 +19,10 @@ p.card-text {
     text-align: center;
 }
 
-button.btn-xs {
+button.btn-xs.btn.btn-none {
     font-size: 7px;
-    font-family: "Montserrat"
+    font-family: "Montserrat";
+    text-align: center;
 }
 
 .card-img {

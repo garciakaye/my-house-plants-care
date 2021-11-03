@@ -1,10 +1,11 @@
 import React from "react";
+import '../Home.css';
 import { NavLink } from "react-router-dom";
 
 const linkStyles = {
   display: "inline-flex",
   font: "Montserrat",
-  padding: "12px",
+  padding: "8px",
   margin: "0 7px 7px",
   background: "white",
   textDecoration: "none",

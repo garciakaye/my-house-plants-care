@@ -33,7 +33,7 @@
       "commonName": "Chain Cactus",
       "image": "https://i.etsystatic.com/20470807/r/il/e3d886/1987466826/il_680x540.1987466826_6g63.jpg",
       "fertilizerSchedule": "Fertilze once a month in from spring to summer.",
-      "waterInstructions": "Water until water is lightly moist.",
+      "waterInstructions": "Water until soil is lightly moist.",
       "waterSchedule": [
         3,
         5,
@@ -59,7 +59,7 @@
       "commonName": "Velvet Leaf Philodendron",
       "image": "https://cdn.shopify.com/s/files/1/2528/3612/products/1-Philodendran-Velvet-4-DETAIL_1800x1800.jpg",
       "fertilizerSchedule": "Fertilze once a month in from spring to summer.",
-      "waterInstructions": "Soil should be moist in the spring and summer. Topsoil should be dry before watering in the winter.",
+      "waterInstructions": "Topsoil should be dry before watering.",
       "waterSchedule": [
         3,
         5
@@ -196,17 +196,6 @@
         2
       ],
       "id": 20
-    },
-    {
-      "botanicalName": "Dimorphotheca Aurantica",
-      "commonName": "African Daisy",
-      "image": "https://www.thespruce.com/thmb/0Kzs9sWv7aj-P_wU-4t5_vkH_X0=/3300x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/KaraRiley-15-db4edba9ae6545d3b8d418c683dd7588.jpg",
-      "fertilizerSchedule": "Fertilze once a month",
-      "waterInstructions": "Soil must be moist but not soggy",
-      "waterSchedule": [
-        2
-      ],
-      "id": 21
     }
   ]
 }
