@@ -4,7 +4,7 @@
 
 
 ## Home Page
-![My Garden 2021-11-04 14-02-29.png]
+![My Garden 2021-11-04 14-02-29.png](https://user-images.githubusercontent.com/88004335/140408198-86020796-cbd0-4115-bcd2-835021dcd41a.png)
 
 
 ## Installing / Getting started
