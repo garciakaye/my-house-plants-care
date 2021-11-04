@@ -9,6 +9,7 @@
 
 ## New Plant Page
 ![New Plant 2021-11-04 15-15-12](https://user-images.githubusercontent.com/88004335/140413311-744c7aa2-5302-4488-8537-d3be30410cf9.png)
+> The New Plant page contains a form. If I, or the user, acquires a new plant, the details of the plant can be added to the database. The Water Schedule form field is a multi-select dropdown of the days of the week. When a new plant is submmited, a picture of the plant is displayed below the form. As I continue to grow my skills and build on this app, I'd' want the user to be able to upload a photo of their actual plant (instead of a URL image) to make it much easier for the plant-sitter to identify where the plant is located in the house. 
 
 
 
