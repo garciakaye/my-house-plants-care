@@ -19,7 +19,6 @@ function Home( {plants, onDeletePlant} ) {
     },[])
     
     
-
     return (
      <div className="plants-to-water">
         <h1>It's {dayFormatted}, {dateFormatted}</h1>

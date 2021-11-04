@@ -69,89 +69,90 @@ function NewPlantForm() {
     <section>
       <h1>Add Your New Plant</h1>
       <Form className="form" onSubmit={handleSubmit}>
-          <Form.Group className="mb-3">
+        <Form.Group className="mb-3">
           <Form.Label>Botanical Name:</Form.Label>
-          <input className="form-control"
-            id="botanicalName"
-            type="text"
-            name="botanicalName"
-            placeholder="Dimorphotheca Aurantica"
-            value={formData.botanicalName}
-            onChange={handleChange}
-          />
+            <Form.Control className="form-control"
+              id="botanicalName"
+              type="text"
+              name="botanicalName"
+              placeholder="Dimorphotheca Aurantica"
+              value={formData.botanicalName}
+              onChange={handleChange}
+            />
         </Form.Group>
         <Form.Group className="mb-3">
           <Form.Label>Common Name:</Form.Label>
-          <input className="form-control"
-            id="commonName"
-            type="text"
-            name="commonName"
-            placeholder="African Daisy"
-            value={formData.commonName}
-            onChange={handleChange}
-          />
+          <Form.Control className="form-control"
+              id="commonName"
+              type="text"
+              name="commonName"
+              placeholder="African Daisy"
+              value={formData.commonName}
+              onChange={handleChange}
+            />
         </Form.Group>
         <Form.Group className="mb-3">
           <Form.Label>Image URL:</Form.Label>
-          <input className="form-control"
-            id="image"
-            type="text"
-            name="image"
-            placeholder="https://www.example/image.jpg"
-            value={formData.image}
-            onChange={handleChange}
-          />
+          <Form.Control className="form-control"
+              id="image"
+              type="text"
+              name="image"
+              placeholder="https://www.example/image.jpg"
+              value={formData.image}
+              onChange={handleChange}
+            />
         </Form.Group>
         <Form.Group className="mb-3">
           <Form.Label>Fertilizer Care (optional):</Form.Label>
-          <input className="form-control"
-            id="fertilizerSchedule"
-            type="text"
-            name="fertilizerSchedule"
-            placeholder="Once a month"
-            value={formData.fertilizerSchedule}
-            onChange={handleChange}
-          />
+          <Form.Control className="form-control"
+              id="fertilizerSchedule"
+              type="text"
+              name="fertilizerSchedule"
+              placeholder="Once a month"
+              value={formData.fertilizerSchedule}
+              onChange={handleChange}
+            />
         </Form.Group>
         <Form.Group className="mb-3">
           <Form.Label>Water Instructions (optional):</Form.Label>
-          <input className="form-control"
-            id="waterInstructions"
-            type="text"
-            name="waterInstructions"
-            placeholder="Water if topsoil is completely dry"
-            value={formData.waterInstructions}
-            onChange={handleChange}
-          />
-        </Form.Group>
-        <Form.Group className="mb-3">
-        <Form.Label>Water Schedule:</Form.Label>
-            <Multiselect
-                id="css_custom" 
-                options={optionsArr} 
-                displayValue="name" 
-                name="waterSchedule" 
-                placeholder="📅" 
-                showCheckbox 
-                style={{
-                    chips: {
-                      background: 'grey'
-                    },
-                    multiselectContainer: {
-                      color: 'grey'
-                    }
-                  }}
-                onSelect={(allDaysOfWeek, selectedDayOfWeek) => {
-                    const daysOfWeek = allDaysOfWeek.map(dayOfWeek => dayOfWeek.id);
-                    setFormData({...formData, waterSchedule: daysOfWeek})}}
+          <Form.Control className="form-control"
+              id="waterInstructions"
+              type="text"
+              name="waterInstructions"
+              placeholder="Water if topsoil is completely dry"
+              value={formData.waterInstructions}
+              onChange={handleChange}
             />
         </Form.Group>
-        <button type="submit">🪴Add New Plant🪴</button>
+        <Form.Group className="mb-3">
+          <Form.Label>Water Schedule:</Form.Label>
+            <Multiselect
+              id="css_custom" 
+              options={optionsArr} 
+              displayValue="name" 
+              name="waterSchedule" 
+              placeholder="📅" 
+              showCheckbox 
+              style={{
+                chips: {
+                  background: 'grey'
+                },
+                multiselectContainer: {
+                  color: 'grey'
+                }
+                }}
+                onSelect={(allDaysOfWeek, selectedDayOfWeek) => {
+                  const daysOfWeek = allDaysOfWeek.map(dayOfWeek => dayOfWeek.id);
+                  setFormData({...formData, waterSchedule: daysOfWeek})
+                }}
+            />
+        </Form.Group>
+          <button className="add-new-plant-btn" type="submit">🪴Add New Plant🪴</button>
       </Form>
-    {newPlant.id
-        ? renderPlantCard(newPlant)
-        : null
-        }  
+      {newPlant.id
+      ? renderPlantCard(newPlant)
+      : null
+      }  
     </section>
   );
 }

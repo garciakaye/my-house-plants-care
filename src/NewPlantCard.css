@@ -1,13 +1,14 @@
-.new-plant-card{
+.new-plant-card {
+    display: flex;
     margin-top: 2em;
     margin-bottom: 2em;
     font-family: "Montserrat";
 }
 
-/* button {
-    float: right;
-} */
-
 .form {
-    margin-bottom: 15em;
+    margin-bottom: 5em;
+}
+
+.add-new-plant-btn {
+    float: right;
 }

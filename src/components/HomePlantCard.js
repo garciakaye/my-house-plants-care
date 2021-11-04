@@ -28,7 +28,7 @@ function HomePlantCard( {plant, onDeletePlant} ) {
                             </Card.Body>
                         </Card>
                     </Col>  
-              </Row>
+        </Row>
     )
 }
 
