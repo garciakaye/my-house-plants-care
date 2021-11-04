@@ -5,6 +5,7 @@
 
 ## Home Page
 ![My Garden 2021-11-04 14-02-29.png](https://user-images.githubusercontent.com/88004335/140408198-86020796-cbd0-4115-bcd2-835021dcd41a.png)
+> When the app first loads, the user is brought to the home page where the current date is displayed. The user would only need to water the plants that are shown on the home page. Each plant card contains general watering instructions, a "watered" button, and a delete button. The "watered" button is droplets of water that turns blue when it's clicked on, which indicates that the plant has already been watered for the day. The tombstone is the delete button, which will delete the plant if it died.
 
 
 ## Installing / Getting started
