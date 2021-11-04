@@ -1,9 +1,8 @@
 
-# Name of the project
-> Additional information or tagline
+# My House Plants Care
+> My web application is a tool that helps me keep track of the watering schedule of my house plants. If I'm out of town, my friend or neighbor can use this app to easily identify which plant needs to be watered on a particular day. 
 
-A brief description of your project, what it is used for and how does life get
-awesome when someone starts to use it.
+
 
 ## Installing / Getting started
 
