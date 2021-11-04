@@ -3,6 +3,9 @@
 > My web application is a tool that helps me keep track of the watering schedule of my house plants. If I'm out of town, my friend or neighbor can use this app to easily identify which plant needs to be watered on a particular day. 
 
 
+## Home Page
+![My Garden 2021-11-04 14-02-29.png]
+
 
 ## Installing / Getting started
 

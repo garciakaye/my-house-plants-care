@@ -10,7 +10,7 @@
       "waterSchedule": [
         1,
         3,
-        5,
+        4,
         0
       ]
     },
@@ -61,8 +61,7 @@
       "fertilizerSchedule": "Fertilze once a month in from spring to summer.",
       "waterInstructions": "Topsoil should be dry before watering.",
       "waterSchedule": [
-        3,
-        5
+        3
       ]
     },
     {
@@ -71,9 +70,9 @@
       "commonName": "Heartleaf Philodendron",
       "image": "https://plantingman.com/wp-content/uploads/2018/12/Philodendron-scandens-Brasil-Indoor-House-Plant.jpg",
       "fertilizerSchedule": "Fertilze once a month in from spring to summer. Every 2 months in the winter",
-      "waterInstructions": "Soil should be moist in the spring and summer. Topsoil should be dry before watering in the winter.",
+      "waterInstructions": "Topsoil should be dry before watering.",
       "waterSchedule": [
-        4,
+        3,
         6
       ]
     },
@@ -97,7 +96,7 @@
       "fertilizerSchedule": "Fertilze once every other week.",
       "waterInstructions": "Water for 15-30 seconds.",
       "waterSchedule": [
-        1
+        4
       ]
     },
     {
@@ -108,7 +107,7 @@
       "fertilizerSchedule": "Fertilze once a month in from spring to summer.",
       "waterInstructions": "Water only if top 2 inches of soil is dry.",
       "waterSchedule": [
-        3
+        4
       ]
     },
     {
@@ -120,7 +119,7 @@
       "waterInstructions": "Water if top 1 inch of soil is dry.",
       "waterSchedule": [
         2,
-        5
+        4
       ]
     },
     {
@@ -131,8 +130,7 @@
       "fertilizerSchedule": "Fertilze once a month.",
       "waterInstructions": "Water if top 1 inch of soil is dry.",
       "waterSchedule": [
-        2,
-        4
+        2
       ]
     },
     {
@@ -169,7 +167,7 @@
       "waterSchedule": [
         3,
         5,
-        2
+        4
       ]
     },
     {
@@ -180,7 +178,7 @@
       "fertilizerSchedule": "Fertilze once every other month",
       "waterInstructions": "Water if top 1 inch of soil is dry.",
       "waterSchedule": [
-        4,
+        5,
         0
       ]
     },
