@@ -13,7 +13,7 @@
 
 ## My Plants Page
 ![My Garden 2021-11-05 09-40-13](https://user-images.githubusercontent.com/88004335/140530602-8945ad5f-ae70-4c9f-902e-634850ca93fe.png)
-
+> The My Plants page displays all of the plants in the database with additional information about the plants such as their botanical names and fertilizer schedule. The user will also be able to delete a plant that has died on this page. 
 
 
 ## Installing / Getting started
