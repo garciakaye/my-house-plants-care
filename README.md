@@ -18,13 +18,11 @@
 
 ## Installing / Getting started
 
-A quick introduction of the minimal setup you need to get a hello world up &
-running.
+The information about all the plants can be found in the `<db.json>` file. For this project, I'm using json-server to create a RESTful API for my database.
 
 ```shell
-packagemanager install awesome-project
-awesome-project start
-awesome-project "Do something!"  # prints "Nah."
+npm install -g json-server
+json-server --watch db.json --port 3004
 ```
 
 Here you should say what actually happens when you execute the code above.
