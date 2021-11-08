@@ -22,7 +22,7 @@
       "fertilizerSchedule": "Fertilze once a month in the spring, summer, and fall.",
       "waterInstructions": "Ensure soil is completely dry before watering.",
       "waterSchedule": [
-        2,
+        1,
         5,
         4
       ]
@@ -35,7 +35,7 @@
       "fertilizerSchedule": "Fertilze once a month in from spring to summer.",
       "waterInstructions": "Water until soil is lightly moist.",
       "waterSchedule": [
-        3,
+        1,
         5,
         4
       ]
@@ -48,7 +48,7 @@
       "fertilizerSchedule": "Fertilze once a month in from spring to summer.",
       "waterInstructions": "Water if the top 2-3 inches of soil is dry.",
       "waterSchedule": [
-        3,
+        1,
         5,
         4
       ]
@@ -61,7 +61,7 @@
       "fertilizerSchedule": "Fertilze once a month in from spring to summer.",
       "waterInstructions": "Topsoil should be dry before watering.",
       "waterSchedule": [
-        3
+        1
       ]
     },
     {
@@ -72,7 +72,7 @@
       "fertilizerSchedule": "Fertilze once a month in from spring to summer. Every 2 months in the winter",
       "waterInstructions": "Topsoil should be dry before watering.",
       "waterSchedule": [
-        3,
+        1,
         6
       ]
     },
@@ -84,7 +84,7 @@
       "fertilizerSchedule": "Fertilize every 2 weeks in spring and summer. Reduce to once a month during fall.",
       "waterInstructions": "Soil should be moist, but never soggy.",
       "waterSchedule": [
-        3,
+        1,
         5
       ]
     },
@@ -194,6 +194,28 @@
         2
       ],
       "id": 20
+    },
+    {
+      "botanicalName": "Saintpaulia",
+      "commonName": "African Violet",
+      "image": "https://www.thespruce.com/thmb/BHjM0Dxi14EY3V2GtLPzkAp6jAI=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/grow-african-violets-indoors-1902733-02-ae7c409a65ba4b949cb33518c37dd90e.jpg",
+      "fertilizerSchedule": "Every other week",
+      "waterInstructions": "Keep soil moist with warm water",
+      "waterSchedule": [
+        3
+      ],
+      "id": 22
+    },
+    {
+      "botanicalName": "Dimorphotheca Aurantica",
+      "commonName": "African Daisy",
+      "image": "https://www.thespruce.com/thmb/0Kzs9sWv7aj-P_wU-4t5_vkH_X0=/3300x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/KaraRiley-15-db4edba9ae6545d3b8d418c683dd7588.jpg",
+      "fertilizerSchedule": "Every other week",
+      "waterInstructions": "Soil must be moist but not soggy",
+      "waterSchedule": [
+        1
+      ],
+      "id": 23
     }
   ]
 }

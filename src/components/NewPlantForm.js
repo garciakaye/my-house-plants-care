@@ -55,7 +55,7 @@ function NewPlantForm() {
     })
         .then((r) => r.json())
         .then((newlyAddedPlant) => setNewPlant(newlyAddedPlant))
-    setFormData(initialFormValues)
+        setFormData(initialFormValues)
   }
 
     const renderPlantCard = plant => (

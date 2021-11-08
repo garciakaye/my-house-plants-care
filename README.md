@@ -18,7 +18,7 @@
 
 ## Installing / Getting started
 
-> The information about all the plants can be found in the <db.json> file. For this project, I'm using json-server to create a RESTful API for my database.
+> The information about all the plants can be found in the `db.json` file. For this project, I'm using json-server to create a RESTful API for my database.
 
 ```shell
 npm install -g json-server
