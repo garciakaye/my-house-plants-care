@@ -119,7 +119,8 @@
       "waterInstructions": "Water if top 1 inch of soil is dry.",
       "waterSchedule": [
         2,
-        4
+        4,
+        3
       ]
     },
     {
@@ -130,7 +131,8 @@
       "fertilizerSchedule": "Fertilze once a month.",
       "waterInstructions": "Water if top 1 inch of soil is dry.",
       "waterSchedule": [
-        2
+        2,
+        3
       ]
     },
     {
@@ -142,7 +144,8 @@
       "waterInstructions": "Water if top 1 inch of soil is dry.",
       "waterSchedule": [
         1,
-        5
+        5,
+        3
       ]
     },
     {
@@ -189,9 +192,8 @@
       "fertilizerSchedule": "Fertilze once every other month",
       "waterInstructions": "Water if top 2-3 inches of soil is dry.",
       "waterSchedule": [
-        4,
-        0,
-        2
+        3,
+        0
       ],
       "id": 20
     },
@@ -200,22 +202,12 @@
       "commonName": "African Violet",
       "image": "https://www.thespruce.com/thmb/BHjM0Dxi14EY3V2GtLPzkAp6jAI=/960x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/grow-african-violets-indoors-1902733-02-ae7c409a65ba4b949cb33518c37dd90e.jpg",
       "fertilizerSchedule": "Every other week",
-      "waterInstructions": "Keep soil moist with warm water",
+      "waterInstructions": "Keep soil moist with warm water.",
       "waterSchedule": [
-        3
+        3,
+        0
       ],
       "id": 22
-    },
-    {
-      "botanicalName": "Dimorphotheca Aurantica",
-      "commonName": "African Daisy",
-      "image": "https://www.thespruce.com/thmb/0Kzs9sWv7aj-P_wU-4t5_vkH_X0=/3300x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/KaraRiley-15-db4edba9ae6545d3b8d418c683dd7588.jpg",
-      "fertilizerSchedule": "Every other week",
-      "waterInstructions": "Soil must be moist but not soggy",
-      "waterSchedule": [
-        1
-      ],
-      "id": 23
     }
   ]
 }

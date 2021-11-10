@@ -1,4 +1,4 @@
-import React, { useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 // import '../App.css';
 import { Route, Switch } from "react-router-dom";
 import NavBar from "./NavBar";
@@ -20,10 +20,10 @@ function App() {
     setPlants(updatedPlants)
     
       fetch(`http://localhost:3004/plants/${deletedPlant.id}`, {
-          method: "DELETE",
+        method: "DELETE",
       })
-          .then((r) => r.json())
-          .then(() => console.log)
+        .then((r) => r.json())
+        .then(() => console.log)
   }
 
   

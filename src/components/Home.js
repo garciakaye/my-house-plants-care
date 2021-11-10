@@ -12,11 +12,11 @@ function Home( {plants, onDeletePlant} ) {
     const currentDayIndex = getDay(date)
     
     
-    const plantsToPrint = plants.reduce((plantsToWater, plant) => { 
+    const plantsToPrint = plants?.reduce((plantsToWater, plant) => { 
         if(plant.waterSchedule.indexOf(currentDayIndex) > -1){plantsToWater.push(plant)
-    }
-    return plantsToWater
-    },[])
+        }
+        return plantsToWater
+        },[])
     
     
     return (
