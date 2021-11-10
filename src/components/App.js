@@ -23,7 +23,7 @@ function App() {
         method: "DELETE",
       })
         .then((r) => r.json())
-        .then(() => console.log)
+        .then(console.log)
   }
 
   

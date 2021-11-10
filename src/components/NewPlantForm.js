@@ -6,7 +6,7 @@ import NewPlantCard from "./NewPlantCard"
 
 // const weekDays = ["sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"]
 
-function NewPlantForm() {
+function NewPlantForm({ onAddPlant }) {
   const [newPlant, setNewPlant] = useState({}) 
   const [formData, setFormData] = useState({
     botanicalName: "",
@@ -54,7 +54,10 @@ function NewPlantForm() {
       body: JSON.stringify(addedPlant),
     })
         .then((r) => r.json())
-        .then((newlyAddedPlant) => setNewPlant(newlyAddedPlant))
+        .then((newlyAddedPlant) => {
+          setNewPlant(newlyAddedPlant)
+          onAddPlant(newlyAddedPlant)
+        })
         setFormData(initialFormValues)
   }
 
