@@ -4,7 +4,8 @@ import { Route, Switch } from "react-router-dom";
 import NavBar from "./NavBar";
 import Home from "./Home";
 import NewPlantForm from "./NewPlantForm";
-import PlantDetails from "./PlantDetails"
+import PlantDetails from "./PlantDetails";
+import Counter from "./Counter"
 
 function App() {
   const [plants, setPlants] = useState([])
@@ -49,6 +50,9 @@ function App() {
           plants={plants}
           onDeletePlant={handleDeletePlant}
         />
+      </Route>
+      <Route exact path="/counter">
+        <Counter />
       </Route>
     </Switch>
   </div>

@@ -48,6 +48,17 @@ function NavBar() {
     >
       My Plants
     </NavLink>
+    <NavLink
+      to="/counter"
+      exact
+      style={linkStyles}
+      activeStyle={{
+        background: "black",
+        color: "white"
+      }} 
+    >
+      Counter
+    </NavLink>
   </div>
   );
 }

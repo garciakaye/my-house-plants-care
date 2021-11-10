@@ -18,6 +18,7 @@ function Home( {plants, onDeletePlant} ) {
         return plantsToWater
         },[])
     
+        // .filter()
     
     return (
      <div className="plants-to-water">
